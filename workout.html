@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Запази си час</title>
+        <link rel="stylesheet" href="fitness.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img class="logo" src="GM.png" alt="GM Fitness Center">
+                <nav class="menu">
+                    <ul class="nav-menu">
+                        <li class="menu-item"><a href="fitness.html" class="link">ЗА НАС</a></li>
+                        <li class="menu-item"><a href="galery1.html" class="link">ГАЛЕРИЯ</a></li>
+                        <li class="menu-item"><a href="workout.html" class="link">ПРОФЕСИОНАЛНА ТРЕНИРОВКА</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <form class="form" id="myForm" name="myForm" onsubmit="return validateForm()" method="post">
+                <h1 id="form-h">Тренировка с инструктор</h1>
+                <h2 id="form-subh">Въведете необходимите данни:</h2>
+                <input type="text" name="name" id="name" placeholder="Име и фамилия" class="input" onsubmit="return validateName()" method="post">
+                <input type="text" name="email" id="email" placeholder="Имейл" class="input" onsubmit="return validateEmail()" method="post">
+                <input type="text" name="phone" id="phone" placeholder="Телефон" class="input" onsubmit="return validatePhone()" method="post">
+                <input type="date" name="date" id="date" placeholder="Дата" class="input" required>
+                <input type="time" name="time" id="time" placeholder="Час" class="input" required>
+                <button type="submit" class="button">Изпрати</button>
+                <p id="inf">След като данните бъдат обработени ще се свържем с Вас.</p>
+            </form>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="foot-d">
+                    <h4 class="foot-h">Адрес</h4>
+                    <p>кв. Студентски град, </p>
+                    <p>ул. Акад. Борис Стефанов 3</p>
+                </div>
+                <div class="foot-d">
+                    <h4 class="foot-h">За контакти</h4>
+                    <p>+359 889 140 789</p>
+                    <p>gmfitness@abv.bg</p>
+                </div>
+                <div class="foot-d">
+                    <h4 class="foot-h">Работно време</h4>
+                    <p>Понеделник-Събота: 08:00-22:00ч. </p>
+                    <p>Неделя: 09:00-21:00ч. </p>
+                </div>
+            </div>
+        </footer>
+        <script src="fitness.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+        <script src="request.js"></script>
+    </body>
+</html>

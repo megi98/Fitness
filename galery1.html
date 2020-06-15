@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Галерия</title>
+        <link rel="stylesheet" href="fitness.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img class="logo" src="GM.png" alt="GM Fitness Center">
+                <nav class="menu">
+                    <ul class="nav-menu">
+                        <li class="menu-item"><a href="fitness.html" class="link">ЗА НАС</a></li>
+                        <li class="menu-item"><a href="galery1.html" class="link">ГАЛЕРИЯ</a></li>
+                        <li class="menu-item"><a href="workout.html" class="link">ПРОФЕСИОНАЛНА ТРЕНИРОВКА</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="line">
+                <img class="photos" src="back.png" onclick="myFunction(this);">
+                <img class="photos" src="4.png" onclick="myFunction(this);">
+                <img class="photos" src="3.png" onclick="myFunction(this);">
+            </div>
+            <div class="line">
+                <img class="photos line2" src="11.png" onclick="myFunction(this);">
+                <img class="photos line2" src="9.png" onclick="myFunction(this);">
+                <img class="photos line2" src="2.png" onclick="myFunction(this);">
+            </div>
+            <div class="line">
+                <img class="photos" src="7.png" onclick="myFunction(this);">
+                <img class="photos" src="10.png" onclick="myFunction(this);">
+                <img class="photos" src="6.png" onclick="myFunction(this);">
+            </div>
+            <div class="modal">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg">             
+            </div>
+        </section>
+        <footer>
+            <div class="foot">
+                <div class="foot-d">
+                    <h4 class="foot-h">Адрес</h4>
+                    <p>кв. Студентски град, </p>
+                    <p>ул. Акад. Борис Стефанов 3</p>
+                </div>
+                <div class="foot-d">
+                    <h4 class="foot-h">За контакти</h4>
+                    <p>+359 889 140 789</p>
+                    <p>gmfitness@abv.bg</p>
+                </div>
+                <div class="foot-d">
+                    <h4 class="foot-h">Работно време</h4>
+                    <p>Понеделник-Събота: 08:00-22:00ч. </p>
+                    <p>Неделя: 09:00-21:00ч. </p>
+                </div>
+            </div>
+        </footer>
+        <script src="fitness.js"></script>
+    </body>
+</html>
